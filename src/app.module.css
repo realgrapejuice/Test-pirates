@@ -5,3 +5,8 @@
   justify-content: space-between;
   padding: 0 10px;
 }
+
+.head > button {
+  font-size: var(--font-medium);
+  color: var(--color-lightgrey);
+}
