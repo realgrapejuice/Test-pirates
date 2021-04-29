@@ -9,4 +9,5 @@
 .head > button {
   font-size: var(--font-medium);
   color: var(--color-lightgrey);
+  cursor: pointer;
 }

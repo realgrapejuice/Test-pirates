@@ -1,49 +1,98 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./nav.module.css";
 
-const Nav = (props) => {
+const Nav = () => {
   return (
     <nav className={styles.nav}>
       <ul>
-        <li className="nav__item">
-          <a className={styles.link} href="/홈">
+        <li>
+          <NavLink
+            to="/홈"
+            activeStyle={{
+              fontWeight: "700",
+              color: "#1c79bc",
+            }}
+          >
             홈
-          </a>
+          </NavLink>
         </li>
-        <li className="nav__item">
-          <a className={styles.link} href="/시장">
+        <li>
+          <NavLink
+            to="/시장"
+            activeStyle={{
+              fontWeight: "700",
+              color: "#1c79bc",
+            }}
+          >
             시장
-          </a>
+          </NavLink>
         </li>
-        <li className="nav__item">
-          <a className={styles.link} href="/쇼핑">
+        <li>
+          <NavLink
+            to="/쇼핑"
+            activeStyle={{
+              fontWeight: "700",
+              color: "#1c79bc",
+            }}
+          >
             쇼핑
-          </a>
+          </NavLink>
         </li>
-        <li className="nav__item">
-          <a className={styles.link} href="/콘텐츠">
+        <li>
+          <NavLink
+            to="/콘텐츠"
+            activeStyle={{
+              fontWeight: "700",
+              color: "#1c79bc",
+            }}
+          >
             콘텐츠
-          </a>
+          </NavLink>
         </li>
-        <li className="nav__item">
-          <a className={styles.link} href="/시세">
+        <li>
+          <NavLink
+            to="/시세"
+            activeStyle={{
+              fontWeight: "700",
+              color: "#1c79bc",
+            }}
+          >
             시세
-          </a>
+          </NavLink>
         </li>
-        <li className="nav__item">
-          <a className={styles.link} href="/도매">
+        <li>
+          <NavLink
+            to="/도매"
+            activeStyle={{
+              fontWeight: "700",
+              color: "#1c79bc",
+            }}
+          >
             도매
-          </a>
+          </NavLink>
         </li>
-        <li className="nav__item">
-          <a className={styles.link} href="/후기">
+        <li>
+          <NavLink
+            to="/후기"
+            activeStyle={{
+              fontWeight: "700",
+              color: "#1c79bc",
+            }}
+          >
             후기
-          </a>
+          </NavLink>
         </li>
-        <li className="nav__item">
-          <a className={styles.link} href="/문의">
+        <li>
+          <NavLink
+            to="/문의"
+            activeStyle={{
+              fontWeight: "700",
+              color: "#1c79bc",
+            }}
+          >
             문의
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>

@@ -49,6 +49,7 @@ a {
 }
 
 body {
+  font-family: "Noto Sans KR", sans-serif;
   background-color: var(--color-deepblack);
 }
 #root {
