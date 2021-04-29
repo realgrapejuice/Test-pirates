@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+}
+
+.wrapper li {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-large);
+  justify-content: center;
+  background-color: var(--color-lightblue);
+  height: 40px;
+}
+
+.wrapper li > a {
+  text-align: center;
+  color: var(--color-white);
+}
