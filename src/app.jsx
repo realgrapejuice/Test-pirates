@@ -1,8 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
 import styles from "./app.module.css";
 import Nav from "./components/nav";
+import Slide from "./components/slide";
 
-function App() {
+function App(json) {
+  const bannerData = json.json.bannerData;
+  const itemData = json.json.itemData;
+  const storeData = json.json.storeData;
+  const zoneData = json.json.zoneData;
   return (
     <BrowserRouter>
       <header>
@@ -14,6 +19,7 @@ function App() {
         </div>
         <Nav />
       </header>
+      <Slide bannerData={bannerData} />
     </BrowserRouter>
   );
 }
