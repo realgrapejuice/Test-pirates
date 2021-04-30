@@ -1,21 +1,18 @@
-import { BrowserRouter, Link } from "react-router-dom";
-import styles from "./app.module.css";
-import Nav from "./components/nav";
+import { BrowserRouter, Route } from "react-router-dom";
+import Header from "./components/header";
+
 import Slide from "./components/slide";
+import Option from "./components/option";
 
 function App({ bannerData, itemData, storeData, zoneData }) {
   return (
     <BrowserRouter>
-      <header>
-        <div className={styles.head}>
-          <Link to="/홈">
-            <img src="/images/로고.JPG" alt="인어교주해적단 로고" />
-          </Link>
-          <button type="button">로그인/가입</button>
-        </div>
-        <Nav />
-      </header>
+      <Header />
       <Slide bannerData={bannerData} />
+      <Route exact path="/홈"></Route>
+      <Route path="/시장">
+        <Option itemData={itemData} storeData={storeData} zoneData={zoneData} />
+      </Route>
     </BrowserRouter>
   );
 }

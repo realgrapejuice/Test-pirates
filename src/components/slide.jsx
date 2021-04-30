@@ -51,7 +51,7 @@ const Slide = ({ bannerData }) => {
 
   /* Event handler */
   useEffect(() => {
-    const timer = setInterval(loadNextSlide, 5000);
+    const timer = setInterval(loadNextSlide, 10000);
     return () => clearInterval(timer);
   });
 

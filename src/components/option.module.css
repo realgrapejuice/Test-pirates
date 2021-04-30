@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  border-bottom: 1px solid var(--color-lightgrey);
+  background-color: var(--color-backgroundgrey);
+  color: var(--color-darkgrey);
+}
+
+.container div:nth-of-type(2) {
+  border-left: 1px solid var(--color-lightgrey);
+  border-right: 1px solid var(--color-lightgrey);
+}
+
+.container h3,
+.container span {
+  font-size: var(--font-large);
+  cursor: pointer;
+}
+
+.container h3 {
+  margin-right: 5px;
+}
