@@ -59,3 +59,9 @@ body {
   margin: 0 auto;
   background-color: var(--color-white);
 }
+
+/* Slide CSS */
+.on {
+  height: 40px;
+  overflow: hidden;
+}

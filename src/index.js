@@ -1,4 +1,5 @@
 import "./index.css";
+import "@fortawesome/fontawesome-free/js/all.js";
 import App from "./app";
 import { bannerData, itemData, storeData, zoneData } from "./data/demo_data";
 import React from "react";

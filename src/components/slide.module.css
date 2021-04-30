@@ -1,5 +1,6 @@
 .wrapper {
   width: 100%;
+  position: relative;
 }
 
 .wrapper li {
@@ -14,4 +15,30 @@
 .wrapper li > a {
   text-align: center;
   color: var(--color-white);
+}
+
+.buttonUp,
+.buttonDown {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  transform: scale(1.1);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.slideBanner a {
+  animation: bottomToTop 500ms;
+}
+
+@keyframes bottomToTop {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
